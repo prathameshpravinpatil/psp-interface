@@ -1,45 +1,28 @@
 {
-  "name": "psp-potentiostat",
+  "name": "psp-potentiostat-interface",
   "private": true,
   "version": "1.0.0",
-  "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "electron .",
     "dev": "vite",
     "build": "vite build",
-    "build-win": "npm run build && electron-builder --win",
-    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "recharts": "^2.13.0",
-    "lucide-react": "^0.468.0"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "lucide-react": "0.344.0",
+    "recharts": "2.10.3",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "electron": "^33.2.1",
-    "electron-builder": "^25.1.8",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.16",
-    "vite": "^6.0.3",
-    "eslint": "^9.16.0"
-  },
-  "build": {
-    "appId": "com.psp.potentiostat",
-    "productName": "PSP_Potentiostat_v4",
-    "directories": {
-      "output": "package"
-    },
-    "win": {
-      "target": "portable"
-    },
-    "files": [
-      "dist/**/*",
-      "main.js"
-    ]
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.4.5"
   }
 }
